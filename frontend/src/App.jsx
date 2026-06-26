@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet"
 import "leaflet/dist/leaflet.css";
 import "./App.css";
 
-const API_BASE = import.meta.env.VITE_API_URL || "";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const POLL_INTERVAL_MS = 10000;
 const STALE_THRESHOLD_MS = 15 * 60 * 1000;
 const DEFAULT_CENTER = [17.522624444444443, 78.41514388888889];

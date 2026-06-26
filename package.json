@@ -2,9 +2,9 @@
   "name": "voltcred-fleet",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "cd backend && npm install && node src/app.js",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:frontend": "cd frontend && npm run dev"
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm install --prefix backend && node backend/src/app.js",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend"
   }
 }
